@@ -1,0 +1,33 @@
+    1  ldd /bin/ls | grep selinux
+    2  ls -l
+    3  ls -l /ect/selinux/
+    4  ls -l /etc/selinux/
+    5  ls -l /etc/selinux/targeted/
+    6  id -Z
+    7  ls -Z /etc/passwd /etc/group /etc/shadow
+    8  ls -Z /etc/login.defs /etc/sudoers
+    9  ls -Z /usr/bin/passwd
+   10  ls -Z /usr/bin/userad
+   11  ls -Z /usr/bin/useradd
+   12  ls -Z /usr/sbin/useradd
+   13  getfattr -n security.selinux /etc/passwd
+   14  ps Zaux
+   15  ls /proc/$$/attr
+   16  ps Z $(pgrep passwd)
+   17  netstat -tnlpZ
+   18  sestatus
+   19  getsebool -a | grep httpd
+   20  seinfo
+   21  seinf -cfile -x
+   22  seinfo -cfile -x
+   23   $ grep 'httpd_.*_t' /etc/selinux/targeted/contexts/files/file_contexts
+   24  grep 'httpd_.*_t' /etc/selinux/targeted/contexts/files/file_contexts
+   25  semanage fcontext -l
+   26  ls -Z 2-1.c 
+   27  cd ..
+   28  ls -Z Laboratory_works_2part/
+   29  cd Laboratory_works_2part/
+   30  sesearch -T -s httpd_t -t var_log_t
+   31  sesearch -T -s httpd_t -t tmp_t
+   32  sesearch --allow --source passwd_t --target shadow_t --class file
+   33  history > history_lab_12
