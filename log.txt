@@ -1,0 +1,6 @@
+May 28 00:40:55 localhost.localdomain systemd[1]: Started MEPhI hello service.
+May 28 00:40:55 localhost.localdomain printf[5448]: Hello, MEPhI!
+May 28 00:40:55 localhost.localdomain systemd[1]: mephi.service: Succeeded.
+May 28 00:40:55 localhost.localdomain systemd[1]: Started MEPhI hello service.
+May 28 00:40:55 localhost.localdomain printf[5690]: Hello, MEPhI!
+May 28 00:40:55 localhost.localdomain systemd[1]: mephi.service: Succeeded.
